@@ -35,6 +35,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(4, 0, len(list_val)-1, list_val), 4)
         list_val = [1, 2, 3, 4, 5, 6, 7]
         self.assertEqual(bin_search(6, 0, 6, list_val), 5)
+        self.assertEqual(bin_search(1, 0, 6, list_val), 0)
         list_val = [5, 10, 15, 20]
         self.assertEqual(bin_search(25, 0, 3, list_val), None)
         list_val = []
